@@ -1,6 +1,6 @@
 # Preparation
-1. First, download [this](https://drive.google.com/file/d/1XDkycp9DfaUTwRdZWeE8WMffhltzRYry/view?usp=sharing) \
-2. In cmd, connect to tawwania, and put it to ~/LumFile \
+1. First, download [this](https://drive.google.com/file/d/1XDkycp9DfaUTwRdZWeE8WMffhltzRYry/view?usp=sharing) 
+2. In cmd, connect to tawwania, and put it to ~/LumFile 
 ```
 sftp user@140.110.148.22
 Password:
