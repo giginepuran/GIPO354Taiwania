@@ -1,4 +1,5 @@
 # Preparation
+0. Manual [this](https://drive.google.com/file/d/1Dfvzk2XCij7xsMjAPPVNzH4izbnAWXy5/view?usp=sharing)
 1. First, download [this](https://drive.google.com/file/d/1XDkycp9DfaUTwRdZWeE8WMffhltzRYry/view?usp=sharing) 
 2. In cmd, connect to tawwania, and put it to ~/LumFile 
 ```
