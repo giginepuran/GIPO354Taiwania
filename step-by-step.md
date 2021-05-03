@@ -14,4 +14,7 @@ vim testjob.sh
 ## Install Lumerical & test 
 ![Install](https://imgur.com/BQCLIBn.jpg)
 
+## ~/tools/.../bin/launch
+![license](https://imgur.com/j2JF50S.jpg)
+
 # That's all
