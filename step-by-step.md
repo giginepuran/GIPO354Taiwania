@@ -10,7 +10,6 @@
 cd LumFile
 vim testjob.sh
 ```
-![vim](https://imgur.com/REpqA9T.jpg) \
 ![BeforeInstall](https://imgur.com/n5LaMHe.jpg)
 6. Install Lumerical & test \
 ![Install](https://imgur.com/BQCLIBn.jpg)
