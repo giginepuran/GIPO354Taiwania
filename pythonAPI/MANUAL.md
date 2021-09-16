@@ -65,11 +65,12 @@ proceed ([y]/n)? y
 跑自動最佳化模擬就直接跑main.py就好
 
 ## 3. Example
-請將檔案存放如下圖
+請將檔案存放如下圖, 這邊是我自己電腦的資料夾, taiwania 那邊我是放在pythonAPI下, 所以下一張圖是cd pythonAPI
 
 ![workPath](https://imgur.com/j2502N2.jpg)
 
 在你的workPath(放main.py的資料夾下)執行python main.py
+
 ![workExp](https://imgur.com/V2STS2D.jpg)
 
 ## 4. Complement
