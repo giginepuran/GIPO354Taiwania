@@ -74,7 +74,7 @@ proceed ([y]/n)? y
 ![workExp](https://imgur.com/V2STS2D.jpg)
 
 ## 4. Complement
-### A. 預設是每模擬10次, 會寄一次模擬結果信, 可以自己改寄信頻率, 在simuFDTD.py中
+### A. 預設是每模擬10次, 會寄一次模擬結果信, 可以自己改寄信頻率跟信箱, 在simuFDTD.py中
 ![mail](https://imgur.com/E6B8yVV.jpg)
 ### B. lumerical的python api有時候會秀抖, 不能打開fsp, 或他自己關掉, 所以DBSflow.py包了幾個迴圈, 防止程式中止, 如果要自己寫script可以參考一下
 ![robusten](https://imgur.com/gEmcpP4.jpg)
