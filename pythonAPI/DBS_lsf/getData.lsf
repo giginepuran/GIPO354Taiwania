@@ -1,0 +1,2 @@
+# Get transmission from port1 to port2
+T = abs(transmission("field_port2"))/transmission("field_port1");

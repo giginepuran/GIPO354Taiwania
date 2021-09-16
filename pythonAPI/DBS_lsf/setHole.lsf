@@ -1,0 +1,10 @@
+# add dot
+switchtolayout;
+addcircle;
+set("name", "dot{Number}");
+set("x", dot_xe-9);
+set("y", dot_ye-9);
+set("z min", 0);
+set("z max", 220e-9);
+set("radius", 45e-9);
+set("material", "etch");

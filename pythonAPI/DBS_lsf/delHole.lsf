@@ -1,0 +1,3 @@
+switchtolayout;
+select("dot{Number}");
+delete;

@@ -1,0 +1,97 @@
+switchtolayout;
+
+#----------solver------------
+# Set simulation region
+addfdtd;
+# 1 = 2D, 2 = 3D
+set("dimension",2);  
+set("x min", -0.8e-6);
+set("x max", 3.2e-6);
+set("y min", -0.8e-6);
+set("y max", 3.2e-6);
+set("z min", -0.5e-6);
+set("z max", 0.72e-6);
+### Note
+# Do not to set source&monitor on the edge of simu region
+
+
+#----------source------------
+addmode;
+set("injection axis", "x");
+set("x", -0.6e-6); # Make source before the input monitor
+set("y", 2.16e-6);
+set("y span", 1e-6);
+set("z min", -0.5e-6);
+set("z max", 0.72e-6);
+set("mode selection","fundamental TE mode");
+set("center wavelength", 1.55e-6);
+set("wavelength span", 0);
+#set("wavelength span", 0.3e-6);
+# set the resoulution of bandwidth
+# not yet
+
+# monitor type
+# 1:Point 
+# 2:Linear_X 3:Linear_Y 4:Linear_Z
+# 5:2D_X-normal 6:2D_Y-normal 7:2D_Z-normal
+# 8:3D
+
+#----------port1------------
+# Set input monitor (port_1)
+# Field and power (DFT)
+addpower;
+set("name","field_port1");
+set("monitor type",5);  
+set("x", -0.4e-6);
+set("y", 2.16e-6);
+set("y span", 1e-6);
+set("z min", -0.5e-6);
+set("z max", 0.72e-6);
+# Mode expansion
+addmodeexpansion;
+set("name","expansion_port1");
+set("monitor type", "2D X-normal");
+# set the XXX(name) monitor to be used by the expansion monitor
+setexpansion("input", "field_port1");
+# select fundamental, fundamental TE or fundamental TM mode 
+set("mode selection","fundamental TE mode");
+set("x", -0.4e-6);
+set("y", 2.16e-6);
+set("y span", 1e-6);
+set("z min", -0.5e-6);
+set("z max", 0.72e-6);
+
+#----------port2------------
+# Set input monitor (port_1)
+# Field and power (DFT)
+addpower;
+set("name","field_port2");
+set("monitor type",6);  
+set("y", -0.4e-6);
+set("x", 2.16e-6);
+set("x span", 1e-6);
+set("z min", -0.5e-6);
+set("z max", 0.72e-6);
+# Mode expansion
+addmodeexpansion;
+set("name","expansion_port2");
+set("monitor type", "2D Y-normal");
+# set the XXX(name) monitor to be used by the expansion monitor
+setexpansion("output", "field_port2");
+# select fundamental, fundamental TE or fundamental TM mode 
+set("mode selection","fundamental TE mode");
+set("y", -0.4e-6);
+set("x", 2.16e-6);
+set("x span", 1e-6);
+set("z min", -0.5e-6);
+set("z max", 0.72e-6);
+
+#------------top view------
+addpower;
+set("name","top_view");
+set("monitor type",7);  
+set("x min", -0.8e-6);
+set("x max", 3.2e-6);
+set("y min", -0.8e-6);
+set("y max", 3.2e-6);
+set("z", 0.11e-6);

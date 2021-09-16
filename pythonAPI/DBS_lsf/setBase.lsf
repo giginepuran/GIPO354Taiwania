@@ -1,0 +1,45 @@
+switchtolayout;
+
+# substrate
+addrect;
+set("name", "substrate");
+set("x min", -0.8e-6);
+set("x max", 3.2e-6);
+set("y min", -0.8e-6);
+set("y max", 3.2e-6);
+set("z min", -3e-6);
+set("z max", 0);
+set("material", "SiO2 (Glass) - Palik");
+
+# port1
+addrect;
+set("name", "port_1");
+set("x min", -0.8e-6);
+set("x max", 0);
+set("y", 2.16e-6);
+set("y span", 480e-9);
+set("z min", 0);
+set("z max", 220e-9);
+set("material", "Si (Silicon) - Palik");
+
+# port2
+addrect;
+set("name", "port_2");
+set("x", 2.16e-6);
+set("x span", 480e-9);
+set("y min", -0.8e-6);
+set("y max", 0);
+set("z min", 0);
+set("z max", 220e-9);
+set("material", "Si (Silicon) - Palik");
+
+# bending area
+addrect;
+set("name", "bending_area");
+set("x min", 0);
+set("x max", 2.4e-6);
+set("y min", 0);
+set("y max", 2.4e-6);
+set("z min", 0);
+set("z max", 220e-9);
+set("material", "Si (Silicon) - Palik");

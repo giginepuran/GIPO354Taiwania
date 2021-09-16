@@ -1,0 +1,6 @@
+deleteall;
+setBase;
+setSimu;
+save("E:\test\DBS\gen1\dot1.fsp");
+run;
+getData;
