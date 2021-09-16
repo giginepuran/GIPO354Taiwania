@@ -76,7 +76,7 @@ proceed ([y]/n)? y
 ## 4. Complement
 ### A. 預設是每模擬10次, 會寄一次模擬結果信, 可以自己改寄信頻率跟信箱, 在simuFDTD.py中
 ![mail](https://imgur.com/E6B8yVV.jpg)
-### B. lumerical的python api有時候會秀抖, 不能打開fsp, 或他自己關掉, 所以DBSflow.py包了幾個迴圈, 防止程式中止, 如果要自己寫script可以參考一下
+### B. lumerical的python api有時候會秀抖, 不能打開fsp, 或他自己關掉, 所以DBSflow.py中用到lumapi的部分都包了迴圈, 防止程式中止, 如果要自己寫script可以參考一下
 ![robusten](https://imgur.com/gEmcpP4.jpg)
 ### C. 台灣杉好像有判定你為idle後踢掉連線的設定... 待解決, 目前是在本地電腦用ahk自動點ThinLinc= =
 ### D. 記得要去改buildOptPath.py中的apiPath, 改成你自己電腦lumapi放的位置, 其他路徑不用改沒關係(大概? 有問題再說)
