@@ -38,12 +38,12 @@ while gen <= maxGen:
                     break
         else:
             dots = dots[:p]+"1"+dots[p+1:]
-            dot_y = 60 + (19 - i // 20) * 120
-            dot_x = 60 + i % 20 * 120
+            dot_y = 60 + (19 - p // 20) * 120
+            dot_x = 60 + p % 20 * 120
             while True:
                 try:
                     fdtd = lumapi.FDTD("inherit.fsp", hide=True)
-                    fdtd.eval(add_dot.replace("{Number}", f"{i}").replace("dot_x", f"{dot_x}").replace("dot_y", f"{dot_y}"))
+                    fdtd.eval(add_dot.replace("{Number}", f"{p}").replace("dot_x", f"{dot_x}").replace("dot_y", f"{dot_y}"))
                     fdtd.save(f"{dotPath}/binarySearch.fsp")
                     fdtd.close()
                 except:

@@ -5,7 +5,7 @@ job = job_template.replace("{filePath}", f"{fspPath}")
 job = job.replace("{gen}", f"{gen}")
 job = job.replace("{p}", f"{p}")
 if p%10 == 0:
-    job = job.replace("{email}", "xxxx@oooo")
+    job = job.replace("{email}", "r09941007@g.ntu.edu.tw")
 with open(f"{jobPath}", "w") as job_sh: # overwrite
     job_sh.write(job)
 # qsub & get queue number
