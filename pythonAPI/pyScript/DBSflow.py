@@ -16,10 +16,9 @@ while gen <= maxGen:
                 fdtd.eval(getData) # You can edit this lsf file to set your own FOM
                 inherit_T = fdtd.getv("T")
                 fdtd.close()
+                break
             except:
                 print(f"eval getData failed at {dotPath}/inherit.fsp")
-            finally:
-                break
         
         # build binary search txt & fsp (new pattern)
         dots = open(f"{dotPath}/inherit.txt", 'r').read()
@@ -32,10 +31,9 @@ while gen <= maxGen:
                     fdtd.eval(del_dot.replace("{Number}", f"{p}"))
                     fdtd.save(f"{dotPath}/binarySearch.fsp")
                     fdtd.close()
+                    break
                 except:
                     print(f"eval del_dot failed at {dotPath}/inherit.fsp")
-                finally:
-                    break
         else:
             dots = dots[:p]+"1"+dots[p+1:]
             dot_y = 60 + (19 - p // 20) * 120
@@ -46,12 +44,10 @@ while gen <= maxGen:
                     fdtd.eval(add_dot.replace("{Number}", f"{p}").replace("dot_x", f"{dot_x}").replace("dot_y", f"{dot_y}"))
                     fdtd.save(f"{dotPath}/binarySearch.fsp")
                     fdtd.close()
+                    break
                 except:
                     print(f"eval add_dot failed at {dotPath}/inherit.fsp")
-                finally:
-                    break
         # save new pattern naming by binarySearch.fsp & binarySearch.txt
-        
         with open(f"{dotPath}/binarySearch.txt", "w") as binarySearch:
             for i in range(N_dots):
                 binarySearch.write(dots[i])
@@ -67,10 +63,9 @@ while gen <= maxGen:
                 fdtd.eval(getData) # You can edit this lsf file to set your own FOM
                 binarySearch_T = fdtd.getv("T")
                 fdtd.close()
+                break
             except:
                 print(f"eval getData failed at {dotPath}/binarySearch.fsp")
-            finally:
-                break
         # Compare FOM
         nextDotPath = f"{optPath}/Gen{gen if p+1 != N_dots else gen+1}/p{0 if p+1 == N_dots else p+1}"
         if binarySearch_T > inherit_T:
