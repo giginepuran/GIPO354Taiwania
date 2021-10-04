@@ -19,9 +19,7 @@ while True:
         # Set Simulation region & run
         fdtd.eval(open(f"{workPath}/DBS_lsf/setSimu.lsf", 'r').read())
         fdtd.save(f"{workPath}/optPath/initial.fsp")
-    except:
-        print(f"eval build ini fsp failed")
-    finally:
         break
-
+    except:
+        print(f"eval build ini fsp failed")    
 print("initial fsp is settled.")
