@@ -46,7 +46,7 @@ proceed ([y]/n)? y
 
 ### 範例結構
 ![DBS_ini](https://imgur.com/AnbpgLb.jpg)
-
+### 最佳化結果
 ![DBS__399_93%](https://imgur.com/FlGpLLH.jpg)
 
 ### 2-2 : .sh file
