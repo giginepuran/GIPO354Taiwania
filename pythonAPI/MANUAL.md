@@ -44,9 +44,9 @@ proceed ([y]/n)? y
 
 #### main.lsf - 在最佳化過程中用不到，但可以拿來確認你的其他lsf有沒有寫錯
 
-### 範例結構
+### 範例結構 (eff ~0%)
 ![DBS_ini](https://imgur.com/AnbpgLb.jpg)
-### 最佳化結果
+### 最佳化結果 (eff 93%)
 ![DBS__399_93%](https://imgur.com/FlGpLLH.jpg)
 
 ### 2-2 : .sh file
