@@ -13,17 +13,17 @@
 ![putFileToHome](https://imgur.com/YXWuH8z.jpg) 
 
 ### 1-3 : 將它解壓縮, 如下圖
-![extract](https://imgur.com/cOlaay0.jpg)
+![extract](https://imgur.com/wIIGoKI.jpg)
 
 ### 1-4 : 進入LumFile的資料夾, 打開testjob.sh, 把使用者信箱改成你自己的, 如下圖
-![edit job template](https://imgur.com/JJEg7B0.jpg)
+![edit job template](https://imgur.com/LRb9uU3.jpg)
 
 ## 2. Install
 ### 2-1 : 在LumFile資料夾下點右鍵, 選擇 Open in Terminal, 如下圖
-![openInTerminal](https://imgur.com/tVzxOIW.jpg)
+![openInTerminal](https://imgur.com/xspqEaV.jpg)
 
 ### 2-2 : 建議先調整terminal的主題, 不然字很不清楚, 如下圖
-![terminal theme](https://imgur.com/ZzLj9kz.jpg)
+![terminal theme](https://imgur.com/4OmHR4y.jpg)
 
 ### 2-3 : 在打開的terminal中, 輸入指令便會自動安裝Lumerical, 如下圖
 ```
@@ -40,7 +40,7 @@ sh LumericalInstaller.sh
 
 ## 3. Complement
 ### 3-1 : 若確認fsp已有包含模擬結果了, 代表lumerical已安裝成功, 同步驟 2-1 打開terminal
-![openInTerminal](https://imgur.com/tVzxOIW.jpg)
+![openInTerminal](https://imgur.com/n95oE1C.jpg)
 
 ### 3-2 : 使用指令清除安裝過程中的檔案, 如下圖
 ```
